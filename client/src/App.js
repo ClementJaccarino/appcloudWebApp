@@ -1,6 +1,6 @@
 import AppNavbar from "./components/AppNavbar";
-import ReviewsList from "./components/ReviewsList";
 import UserPage from "./components/UserPage";
+import AnalystePage from "./components/AnalystePage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -15,11 +15,9 @@ function App() {
           <Route path="/" exact>
             <UserPage></UserPage>
           </Route>
-          <Route path="/admin">
-            <ReviewsList></ReviewsList>
-          </Route>
+          <Route path="/admin"></Route>
           <Route path="/analyste">
-            <h1>anlayste</h1>
+            <AnalystePage></AnalystePage>
           </Route>
         </Switch>
       </div>

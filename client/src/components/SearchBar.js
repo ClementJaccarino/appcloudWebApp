@@ -1,4 +1,4 @@
-import { Form, FormGroup, Input } from "reactstrap";
+import { Input } from "reactstrap";
 
 const SearchBar = ({ keyword, setKeyword }) => {
   return (

@@ -2,12 +2,11 @@ import PodcastList from "./PodcastList";
 import ReviewsList from "./ReviewsList";
 import CategoriesList from "./CategoriesList";
 import SearchBar from "./SearchBar";
-import { Container, Row, Col, Input } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 
 const UserPage = () => {
   return (
     <Container>
-      {/* <Input placeholder="Search..." className="mb-4 w-25"></Input> */}
       <SearchBar></SearchBar>
       <h1>Categories List</h1>
       <CategoriesList></CategoriesList>
