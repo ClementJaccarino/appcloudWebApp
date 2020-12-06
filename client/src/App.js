@@ -1,6 +1,6 @@
 import AppNavbar from "./components/AppNavbar";
-import PodcastList from "./components/PodcastList";
 import ReviewsList from "./components/ReviewsList";
+import UserPage from "./components/UserPage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -13,7 +13,7 @@ function App() {
         <AppNavbar></AppNavbar>
         <Switch>
           <Route path="/" exact>
-            <PodcastList></PodcastList>
+            <UserPage></UserPage>
           </Route>
           <Route path="/admin">
             <ReviewsList></ReviewsList>
