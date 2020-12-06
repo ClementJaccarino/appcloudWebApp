@@ -1,6 +1,6 @@
 import { Container } from "reactstrap";
 
-const AnalystePage = () => {
+const AdminPage = () => {
   return (
     <Container>
       <h1>WIP</h1>
@@ -8,4 +8,4 @@ const AnalystePage = () => {
   );
 };
 
-export default AnalystePage;
+export default AdminPage;

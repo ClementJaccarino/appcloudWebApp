@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import AdminPage from "./components/AdminPage";
 
 function App() {
   return (
@@ -15,7 +16,9 @@ function App() {
           <Route path="/" exact>
             <UserPage></UserPage>
           </Route>
-          <Route path="/admin"></Route>
+          <Route path="/admin">
+            <AdminPage></AdminPage>
+          </Route>
           <Route path="/analyste">
             <AnalystePage></AnalystePage>
           </Route>
