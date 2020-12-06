@@ -1,0 +1,22 @@
+{
+  "name": "appcloudwebapp",
+  "version": "1.0.0",
+  "description": "AppCloud Web App built with the MERN stack",
+  "main": "server.js",
+  "scripts": {
+    "clietn-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon --ignore client/ server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Clement Jaccarino, Axel Joly",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.4",
+    "tunnel-ssh": "^4.1.4"
+  }
+}
