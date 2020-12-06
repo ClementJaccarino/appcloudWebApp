@@ -72,7 +72,7 @@ router.get("/search", async (req, res) => {
 // @desc Get the hour at wich the most reviews are written
 // @accessPublic
 router.get("/hour", async (req, res) => {
-  const hour = Podcast.aggregate([
+  const hour = await Podcast.aggregate([
     { $unwind: "$reviews" },
     {
       $group: {
@@ -83,6 +83,7 @@ router.get("/hour", async (req, res) => {
       },
     },
     { $sort: { count: -1 } },
+    { $limit: 1 },
   ]);
 
   res.json(hour);
